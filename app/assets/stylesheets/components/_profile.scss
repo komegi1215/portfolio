@@ -1,0 +1,46 @@
+.all-container {
+  margin-top: 50px;
+
+}
+
+
+.profile {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.introduction {
+  width: 1000px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(3, 10, 26);
+}
+
+.upper-container {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  justify-content: center;
+  margin: auto;
+}
+
+.title {
+  text-align: left;
+  color:white;
+}
+
+.left-container {
+  width:40%;
+}
+
+.right-container {
+  width: 60%;
+}
+
+.description {
+  color: white;
+}
