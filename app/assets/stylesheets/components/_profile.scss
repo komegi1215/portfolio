@@ -1,5 +1,5 @@
 .all-container {
-  margin-top: 50px;
+  margin-top: 100px;
 
 }
 
@@ -9,6 +9,16 @@
   width: 300px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 12px 12px 2px 1px rgba(188, 188, 188, 0.2);
+}
+
+.profile-pic, .sns {
+  width: 100%;
+}
+
+.sns {
+  height: 50px;
+  margin-top: 20px;
 }
 
 .introduction {
@@ -26,6 +36,7 @@ body {
   width: 1000px;
   justify-content: center;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .title {
@@ -43,4 +54,28 @@ body {
 
 .description {
   color: white;
+}
+
+.nav-link {
+  background-color:#bbb;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.tab_contents_item{
+  display:none;
+}
+
+
+.tab_contents_item.active{
+  display:block;
+}
+
+.fa-brands {
+  color:white;
+  font-size: 40px;
+  margin: 10px;
 }
