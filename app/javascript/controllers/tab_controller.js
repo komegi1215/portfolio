@@ -1,33 +1,35 @@
-import { Controller } from "@hotwired/stimulus";
+// app/javascript/controllers/scroll_controller.js
+import { Controller } from "stimulus";
 
-// Connects to data-controller="tab"
+
 export default class extends Controller {
   connect() {
-    this.update();
-  }
+    // クラス名が「scroll-in」の要素を取得
+    const objects = document.querySelectorAll('.project-card');
 
-  update() {
-    document.addEventListener("turbolinks:load", () => {
-      const tabs = document.getElementsByClassName("nav-link");
-      const tabContents = document.getElementsByClassName("tab_contents_item");
+    // スクロール感知で実行
+    const cb = function(entries, observer) {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('displayed'); // スクロール感知で「displayed」のクラス名を付与
+          observer.unobserve(entry.target); // 監視の終了
+        }
+      });
+    };
 
-      // console.log(tabs);
-      // console.log(tab_contents);
+    // オプション
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0
+    };
 
-      for (let i = 0; i < tabs.length; i++) {
-        tabs[i].addEventListener("click", function (e) {
-          e.preventDefault();
+    // IntersectionObserverインスタンス化
+    const io = new IntersectionObserver(cb, options);
 
-          for (let j = 0; j < tabs.length; j++) {
-            tabs[j].classList.remove("active");
-          }
-          for (let j = 0; j < tabContents.length; j++) {
-            tabContents[j].classList.remove("active");
-          }
-          tabs[i].classList.add("active");
-          tabContents[i].classList.add("active");
-        });
-      }
+    // 監視を開始
+    objects.forEach(object => {
+      io.observe(object);
     });
   }
 }
