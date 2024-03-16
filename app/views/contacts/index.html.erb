@@ -5,21 +5,42 @@
         <%= image_tag "meg.jpeg", class: "profile" %>
       </div>
       <div class="sns">
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
       </div>
     </div>
     <div class="right-container col-7">
       <h1 class = "title">Hi! I am Megumi Mizuno👋🏼</h1>
       <p class = "description">I am a web developer and data engineer! I completed the Le Wagon Bootcamp (6 months of intense coding while workig full time)
         I am working as a CRM specialist at a pharmaceutical company, but start to work on data mangement and data engineering as well. No code, no life💻</p>
+      <p>download my resume</p>
     </div>
   </div>
   <div class="bottom-container">
-  <div class="menu">
-    <div class="menu-1">Projects</div>
-    <div class="menu-2">Certificates</div>
-  </div>
+    <div class="menu">
+      <div class="menu-1">Projects</div>
+      <div class="menu-2">Certificates</div>
+      <div class="menu-2">Contact Me</div>
+    </div>
+    <div class="portfolio">
       <%= render "contacts/portfolio" %>
-</div>
+    </div>
+    <div class="certificate-list">
+      <h1>Skills and Certificates</h1>
+      <%= render "contacts/badge" %>
+    </div>
+
+     <div class="contact-container" style = "margin-top:50px;">
+     <h1>Contact Me</h1>
+    <%= simple_form_for @contact do |f| %>
+      <%= f.input :title, label: "Title" %>
+      <%= f.input :first_name, label: "First Name" %>
+      <%= f.input :last_name, label: "Last Name" %>
+      <%= f.input :email, label: "E-mail" %>
+      <%= f.input :message, label: "Message" %>
+      <%= f.button :submit, "Submit!", class: "form-btn" %>
+    <% end %>
+  </div>
+  </div>
+
 </div>
