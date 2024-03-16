@@ -1,4 +1,5 @@
 <div class="container all-container">
+      <h1 class = "title">Megumi Mizuno</h1>
   <div class="upper-container">
     <div class="left-container justify-content-center introduction col-3">
       <div class="profile-pic">
@@ -10,27 +11,26 @@
       </div>
     </div>
     <div class="right-container col-7">
-      <h1 class = "title">Hi! I am Megumi Mizuno👋🏼</h1>
       <p class = "description">I am a web developer and data engineer! I completed the Le Wagon Bootcamp (6 months of intense coding while workig full time)
         I am working as a CRM specialist at a pharmaceutical company, but start to work on data mangement and data engineering as well. No code, no life💻</p>
-      <p>download my resume</p>
+      <p class = "resume">Download Resume</p>
     </div>
   </div>
   <div class="bottom-container">
     <div class="menu">
-      <div class="menu-1">Projects</div>
-      <div class="menu-2">Certificates</div>
-      <div class="menu-2">Contact Me</div>
+      <a href="#portfolio" class="menu-1">Projects</a>
+      <a href="#certificate-list" class="menu-2">Certificates</a>
+      <a href="#contact-container" class="menu-3">Contact Me</a>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id ="portfolio">
       <%= render "contacts/portfolio" %>
     </div>
-    <div class="certificate-list">
-      <h1>Skills and Certificates</h1>
+    <div class="certificate-list" id ="certificate-list">
+      <h1 class ="certificate-text">Skills and Certificates</h1>
       <%= render "contacts/badge" %>
     </div>
 
-     <div class="contact-container" style = "margin-top:50px;">
+     <div class="contact-container" id ="contact-container" style = "margin-top:50px;">
      <h1>Contact Me</h1>
     <%= simple_form_for @contact do |f| %>
       <%= f.input :title, label: "Title" %>

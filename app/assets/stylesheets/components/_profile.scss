@@ -1,3 +1,10 @@
+.carme-regular {
+  font-family: "Carme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .all-container {
   margin-top: 100px;
 
@@ -9,7 +16,7 @@
   width: 300px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 12px 12px 2px 1px rgba(188, 188, 188, 0.2);
+  box-shadow: 12px 12px 2px 1px rgb(244, 244, 183);
 }
 
 .profile-pic, .sns {
@@ -28,32 +35,75 @@
 
 body {
   background-color: rgb(3, 10, 26);
+  font-family: "Carme", sans-serif;
 }
 
 .upper-container {
   display: flex;
   flex-direction: row;
   width: 1000px;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  margin-bottom: 50px;
 }
 
 .title {
   text-align: left;
   color:white;
+  width:100%;
+  font: bold;
+  // text-shadow: 1px 1px 2px rgb(243, 239, 240);
+
 }
 
 .left-container {
   width:40%;
+  margin-top:10px;
 }
 
 .right-container {
   width: 60%;
+  margin-top:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .description {
   color: white;
+  position: relative;
+  padding-top: 3rem;
+  padding: 1rem;
+  font-size: 20px;
+  // font-weight: thin;
+  text-align: left;
+}
+
+.description::before,
+.description::after {
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    content: '';
+}
+
+.description::before {
+    border-left: solid 3px;
+    border-top: solid 3px;
+    top: 0;
+    left: 0;
+}
+
+.description::after {
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+    bottom: 0;
+    right: 0;
+}
+
+.resume {
+  color:white;
 }
 
 .nav-link {
@@ -79,3 +129,63 @@ body {
   font-size: 40px;
   margin: 10px;
 }
+
+// body {
+//   background: radial-gradient(ellipse at bottom, #022227 0%, #000000 100%);
+//    height: 100vh;
+//    width: 100vw;
+//    margin: 0;
+//  }
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+ .title {
+  -webkit-text-stroke: 1px #fbfadc;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9vh;
+  letter-spacing: 1vw;
+  text-align: center;
+  // position: absolute;
+  // top: 15%; /* Adjust as needed */
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  color: white;
+  background: url('tokyotower.jpg');
+  background-size: auto 200%;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+   }
+   @keyframes shine {
+     from {
+       background-position: center 0;
+     }
+     to {
+       background-position: center 200%;
+     }
+   }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menu-1, .menu-2, .menu-3 {
+    color:white;
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .menu-1:hover, .menu-2:hover, .menu-3:hover {
+    color:rgb(246, 247, 154);
+  }
+
+  .certificate-text {
+    border-color: white;
+
+
+  }
