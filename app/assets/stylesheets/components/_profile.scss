@@ -33,8 +33,8 @@
   text-align: center;
 }
 
-body {
-  background-color: rgb(3, 10, 26);
+html, body {
+  background-color: rgb(3, 10, 26)!important;
   font-family: "Carme", sans-serif;
 }
 
@@ -139,6 +139,10 @@ body {
 
  @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
+ .project-text {
+  color:white;
+  margin-top: 50px;
+ }
  .title {
   -webkit-text-stroke: 1px #fbfadc;
   margin: 0;
@@ -151,7 +155,7 @@ body {
   // left: 50%;
   // transform: translate(-50%, -50%);
   color: white;
-  background: url('tokyotower.jpg');
+  background: url('tokyotower.jpg') center center/cover, rgb(3, 10, 26);
   background-size: auto 200%;
   background-clip: text;
   text-fill-color: transparent;

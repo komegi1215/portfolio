@@ -1,5 +1,8 @@
+
+
 <div class="container all-container">
-      <h1 class = "title">Megumi Mizuno</h1>
+
+  <h1 class = "title">Megumi Mizuno</h1>
   <div class="upper-container">
     <div class="left-container justify-content-center introduction col-3">
       <div class="profile-pic">
@@ -23,24 +26,23 @@
       <a href="#contact-container" class="menu-3">Contact Me</a>
     </div>
     <div class="portfolio" id ="portfolio">
+      <h1 class ="project-text">Projects</h1>
       <%= render "contacts/portfolio" %>
     </div>
     <div class="certificate-list" id ="certificate-list">
       <h1 class ="certificate-text">Skills and Certificates</h1>
       <%= render "contacts/badge" %>
     </div>
-
-     <div class="contact-container" id ="contact-container" style = "margin-top:50px;">
-     <h1>Contact Me</h1>
-    <%= simple_form_for @contact do |f| %>
-      <%= f.input :title, label: "Title" %>
-      <%= f.input :first_name, label: "First Name" %>
-      <%= f.input :last_name, label: "Last Name" %>
-      <%= f.input :email, label: "E-mail" %>
-      <%= f.input :message, label: "Message" %>
-      <%= f.button :submit, "Submit!", class: "form-btn" %>
-    <% end %>
+    <div class="contact-container" id ="contact-container" style = "margin-top:50px;">
+      <h1>Contact Me</h1>
+      <%= simple_form_for @contact do |f| %>
+        <%= f.input :title, label: "Title" %>
+        <%= f.input :first_name, label: "First Name" %>
+        <%= f.input :last_name, label: "Last Name" %>
+        <%= f.input :email, label: "E-mail" %>
+        <%= f.input :message, label: "Message" %>
+        <%= f.button :submit, "Submit!", class: "form-btn" %>
+      <% end %>
+    </div>
   </div>
-  </div>
-
 </div>
