@@ -206,13 +206,16 @@ html, body {
   //   color:rgb(246, 247, 154);
   // }
 
+.certificate-list {
+  padding-top: 50px;
+}
   .certificate-text {
     border-color: white;
   }
 
   //電灯
 
-  .project-text, .certificate-text, .contact-title {
+  .project-text, .certificate-text, .contact-title, .career-text {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
   }
@@ -238,4 +241,29 @@ html, body {
     20%, 24%, 55% {
         text-shadow: none;
     }
+  }
+
+  .career-text {
+    color:white;
+    margin-bottom: 50px;
+
+  }
+
+  .tab-content {
+    color: white;
+  }
+
+  .tab-content > ul {
+    list-style: none;
+
+  }
+
+  .career-time {
+    color: rgb(250, 250, 136);
+    font-size: 1.6rem;
+  }
+
+  .career {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
