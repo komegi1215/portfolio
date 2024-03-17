@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  # get 'contacts/index'
+
+  root "contacts#index"
   # get 'contacts/new'
   # get 'contacts/create'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
