@@ -6,7 +6,7 @@
 
 
 .all-container {
-  margin-top: 100px;
+  padding-top: 100px;
 
 }
 
@@ -16,7 +16,7 @@
   width: 300px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 12px 12px 2px 1px rgb(244, 244, 183);
+  box-shadow: 12px 12px 20px 1px rgb(244, 244, 183);
 }
 
 .profile-pic, .sns {
@@ -45,7 +45,7 @@ html, body {
   justify-content: space-between;
   margin: auto;
   padding-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .title {
@@ -184,12 +184,58 @@ html, body {
     text-decoration: none;
   }
 
-  .menu-1:hover, .menu-2:hover, .menu-3:hover {
-    color:rgb(246, 247, 154);
-  }
+  //hoverで光る
+.menu a {
+	color: rgb(250, 250, 249);
+	// font-size: 5vw;
+	// letter-spacing: 2vw;
+	transition: 1s;
+}
+.menu a:hover {
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 40px #eff8af,
+		0 0 80px #eff8af,
+		0 0 90px #eff8af
+}
+
+
+  // .menu-1:hover, .menu-2:hover, .menu-3:hover {
+  //   color:rgb(246, 247, 154);
+  // }
 
   .certificate-text {
     border-color: white;
+  }
+
+  //電灯
+
+  .project-text, .certificate-text, .contact-title {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+  }
 
 
+  /* Flickering animation */
+  @keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(234, 247, 132),
+        0 0 80px rgb(234, 247, 132),
+        0 0 90px rgb(234, 247, 132),
+        0 0 100px rgb(234, 247, 132),
+        0 0 150px rgb(234, 247, 132);
+
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
   }

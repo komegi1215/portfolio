@@ -21,14 +21,28 @@
 
 .text {
   color: white;
-  animation: blur ease forwards;
-  animation-timeline: view();
-  animation-range: cover 0% cover 100%;
+
+}
+
+.tagline {
+  color:white;
 }
 
 .project-name {
   width: 45%;
   height: 350px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.project-pic-1 {
+  // width: 100%;
+  // height: 100%;
+  border-radius: 25px;
+  object-fit:contain;
+  box-shadow: 12px 12px 20px 1px rgb(245, 245, 198);
 
 }
 
@@ -36,9 +50,9 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  animation: blur ease forwards;
-  animation-timeline: view();
-  animation-range: cover 0% cover 100%;
+  object-fit:cover;
+  box-shadow: 12px 12px 20px 1px rgb(245, 245, 198);
+
 }
 
 .project-description {
@@ -90,6 +104,8 @@ letter-spacing: 0.5em;;
   height: 120px;
   width: 120px;
   display:block;
+  margin-right:20px;
+  margin-left:20px;
 }
 
 
@@ -119,37 +135,34 @@ letter-spacing: 0.5em;;
 
 
 
-/*========= レイアウトのためのCSS ===============*/
+//上に戻るボタン
+html {
+  scroll-behavior: smooth;
+}
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 
-// #wrapper{
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   text-align:center;
-//   color: #fff;
-// }
-
-// a{
-//   color: #fff;
-// }
-
-/*========= particle js を描画するエリア設定 ===============*/
-
-html,body{
-  height: 100%;/*高さを100%にして描画エリアをとる*/
 }
 
-#particles-js{
-  position:fixed;/*描画固定*/
-  z-index:-1;/*描画を一番下に*/
-  // width: 100%;
-  // height: 100%;
-  background-color:#090528;/*背景色*/
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: translateY(20%) rotate(-45deg);
 }
 
-#wrapper{
-  position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
-  z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
-  // width:100%;
-  // height: 100%;
+.pagetop:hover {
+  background-color:rgb(249, 249, 176) ;
 }

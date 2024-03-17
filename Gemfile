@@ -49,6 +49,8 @@ gem "sassc-rails"
 gem "bootstrap", "~> 5.2"
 gem "font-awesome-sass", "~> 6.1"
 gem 'simple_form'
+gem 'dotenv-rails'
+gem 'mailcatcher'
 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
