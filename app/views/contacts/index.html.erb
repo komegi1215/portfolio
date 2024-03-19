@@ -1,21 +1,23 @@
-
-
- <div class="container all-container">
+<div class="container all-container">
   <h1 class = "title">Megumi Mizuno</h1>
   <div class="menu">
-      <a href="#portfolio" class="menu-1">Projects</a>
-      <a href="#career" class="menu-2">Career</a>
-      <a href="#certificate-list" class="menu-3">Skills&Certificates</a>
-      <a href="#contact-container" class="menu-4">Contact</a>
-    </div>
+    <a href="#portfolio" class="menu-1">Projects</a>
+    <a href="#career" class="menu-2">Career</a>
+    <a href="#certificate-list" class="menu-3">Skills&Certificates</a>
+    <a href="#contact-container" class="menu-4">Contact</a>
+  </div>
   <div class="upper-container">
     <div class="left-container justify-content-center introduction col-3">
       <div class="profile-pic">
         <%= image_tag "meg.jpeg", class: "profile" %>
       </div>
       <div class="sns">
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <%= link_to "https://github.com/komegi1215", target: :_blank do %>
+          <%= content_tag(:i, "", class: "fa-brands fa-github") %>
+        <% end %>
+        <%= link_to "https://www.linkedin.com/in/megumimizuno/", target: :_blank do %>
+          <%= content_tag(:i, "", class: "fa-brands fa-linkedin") %>
+        <% end %>
       </div>
     </div>
     <div class="right-container col-7">
@@ -24,7 +26,6 @@
     </div>
   </div>
   <div class="bottom-container">
-
     <div class="portfolio" id ="portfolio">
       <h1 class ="project-text">Projects</h1>
       <%= render "contacts/portfolio" %>
@@ -39,12 +40,13 @@
     </div>
     <h1 class ="contact-title">Contact Me</h1>
     <div class="contact-container" id ="contact-container" style = "margin-top:50px;">
+      <%= render partial: 'shared/error_messages', locals: { model: @contact } %>
       <%= simple_form_for @contact do |f| %>
-        <%= f.input :title, label: "Title" %>
-        <%= f.input :first_name, label: "First Name" %>
-        <%= f.input :last_name, label: "Last Name" %>
-        <%= f.input :email, label: "E-mail" %>
-        <%= f.input :message, label: "Message" %>
+        <%= f.input :title, label: "Title", required: true %>
+        <%= f.input :first_name, label: "First Name", required: true %>
+        <%= f.input :last_name, label: "Last Name", required: true %>
+        <%= f.input :email, label: "E-mail" , required: true%>
+        <%= f.input :message, label: "Message", required: true %>
         <%= f.button :submit, "Submit!", class: "form-btn" %>
       <% end %>
     </div>

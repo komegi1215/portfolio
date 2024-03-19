@@ -4,8 +4,8 @@ class ContactMailer < ApplicationMailer
   # default to: 'admin@example.com'
   # layout 'mailer'
 
-  # def contact_mail(contact)
-  #   @contact = contact
-  #   mail to: @contact.email, bcc: ENV["ACTION_MAILER_USER"], subject: "Thank you for your inquiry!"
-  # end
+  def send_mail(contact)
+    @contact = contact
+    mail to: @contact.email, bcc: ENV["ACTION_MAILER_USER"], subject: "Thank you for your inquiry!"
+  end
 end
