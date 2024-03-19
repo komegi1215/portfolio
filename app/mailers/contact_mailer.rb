@@ -8,4 +8,5 @@ class ContactMailer < ApplicationMailer
     @contact = contact
     mail to: @contact.email, bcc: ENV["ACTION_MAILER_USER"], subject: "Thank you for your inquiry!"
   end
+
 end

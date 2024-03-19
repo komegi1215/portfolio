@@ -15,7 +15,8 @@ class ContactsController < ApplicationController
       ContactMailer.send_mail(@contact).deliver_now
       redirect_to done_path
     else
-      render :new
+      flash[:error] = @contact.errors.full_messages.to_sentence
+      render :index
     end
   end
 
