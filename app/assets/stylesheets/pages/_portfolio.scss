@@ -63,6 +63,12 @@ body {
   flex-direction: row;
 }
 
+@media screen and (min-width: 370px) {
+  .add-links {
+  justify-content: space-between;
+  }
+}
+
 
 .app-container {
   margin-top: 100px;

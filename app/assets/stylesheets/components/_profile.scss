@@ -49,6 +49,7 @@ html, body {
 @media screen and (min-width: 370px) {
   .upper-container {
     flex-direction: column;
+    padding-top: 30px;
   }
 }
 
@@ -98,6 +99,8 @@ html, body {
 @media screen and (min-width: 370px) {
   .right-container {
     width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
   }
 }
 
