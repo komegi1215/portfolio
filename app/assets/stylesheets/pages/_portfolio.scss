@@ -17,10 +17,34 @@ body {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 
 }
 
+.app-button {
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  transition: all .3s;
+
+}
+
+
+/*hoverをしたらボックスに影がつき、上に上がる*/
+.app-button:hover {
+  top:-3px;
+  box-shadow: 5px 5px 10px rgb(248, 248, 179);
+}
+
+.app-links {
+  display:flex;
+  flex-direction: row;
+}
 
 
 .app-container {
