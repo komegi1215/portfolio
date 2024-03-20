@@ -39,7 +39,7 @@ Currently, I am employed as a CRM specialist at a pharmaceutical company, where 
         <%= f.input :first_name, label: "First Name", required: true %>
         <%= f.input :last_name, label: "Last Name", required: true %>
         <%= f.input :email, label: "E-mail" , required: true%>
-        <%= f.input :message, label: "Message", required: true %>
+        <%= f.input :message, label: "Message", input_html: { rows: 15, style: "height: 150px;" }, required: true %>
         <%= f.button :submit, "Submit!", class: "form-btn" %>
       <% end %>
     </div>
