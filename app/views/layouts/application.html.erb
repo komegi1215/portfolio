@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megumi Mizuno</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
@@ -15,12 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <%= render 'shared/ios_pwa_links' %>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  </head>
+   </head>
   <body>
-    <%= yield %>
-    <a class="pagetop" href="#">
-      <div class="pagetop__arrow"></div>
-    </a>
+    <%= yield %>Í
   </body>
 </html>

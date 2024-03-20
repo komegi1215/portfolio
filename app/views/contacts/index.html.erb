@@ -1,4 +1,4 @@
-<div class="container all-container">
+<div class="container-fluid all-container">
   <h1 class = "title">Megumi Mizuno</h1>
   <div class="menu">
     <a href="#portfolio" class="menu-1">Projects</a>
@@ -6,43 +6,47 @@
     <a href="#certificate-list" class="menu-3">Skills&Certificates</a>
     <a href="#contact-container" class="menu-4">Contact</a>
   </div>
-  <div class="upper-container">
-    <div class="left-container justify-content-center introduction col-3">
-      <div class="profile-pic">
-        <%= image_tag "meg.jpeg", class: "profile" %>
+  <div class="row">
+    <div class="upper-container">
+      <div class="col-lg-3 col-md-4 left-container justify-content-center introduction col-3">
+        <div class="profile-pic">
+          <%= image_tag "meg.jpeg", class: "profile" %>
+        </div>
       </div>
-
+      <div class="right-container">
+        <p class = "description">I am a freelance web developer and data engineer with a strong passion for coding. I successfully completed the rigorous <%= link_to "Le Wagon Bootcamp", "https://www.lewagon.com/", class: "link" %>, a six-month program that honed my coding skills while balancing full-time work commitments.<br>
+          Currently, I am employed as a CRM specialist at a pharmaceutical company, where I excel in managing sales operations. Additionally, I have begun delving into the realms of data management and engineering. No code, no life! 💻</p>
+      </div>
     </div>
-    <div class="right-container col-7">
-      <p class = "description">I am a freelance web developer and data engineer with a strong passion for coding. I successfully completed the rigorous <%= link_to "Le Wagon Bootcamp", "https://www.lewagon.com/", class: "link" %>, a six-month program that honed my coding skills while balancing full-time work commitments.<br>
-Currently, I am employed as a CRM specialist at a pharmaceutical company, where I excel in managing sales operations. Additionally, I have begun delving into the realms of data management and engineering. No code, no life! 💻</p>
-    </div>
-  </div>
-  <div class="bottom-container">
-    <div class="portfolio" id ="portfolio">
-      <h1 class ="project-text">Projects</h1>
-      <%= render "contacts/portfolio" %>
-    </div>
-    <div class="career" id ="career">
-      <h1 class ="career-text">Career</h1>
-      <%= render "contacts/career" %>
-    </div>
-    <div class="certificate-list" id ="certificate-list">
-      <h1 class ="certificate-text">Skills and Certificates</h1>
-      <%= render "contacts/badge" %>
-    </div>
-    <h1 class ="contact-title">Contact Me</h1>
-    <div class="contact-container" id ="contact-container" style = "margin-top:50px;">
-      <%= render partial: 'shared/error_messages', locals: { model: @contact } %>
-      <%= simple_form_for @contact do |f| %>
-        <%= f.input :title, label: "Title", required: true %>
-        <%= f.input :first_name, label: "First Name", required: true %>
-        <%= f.input :last_name, label: "Last Name", required: true %>
-        <%= f.input :email, label: "E-mail" , required: true%>
-        <%= f.input :message, label: "Message", input_html: { rows: 15, style: "height: 150px;" }, required: true %>
-        <%= f.button :submit, "Submit!", class: "form-btn" %>
-      <% end %>
+    <div class="bottom-container">
+      <div class="portfolio" id ="portfolio">
+        <h1 class ="project-text">Projects</h1>
+        <%= render "contacts/portfolio" %>
+      </div>
+      <div class="career" id ="career">
+        <h1 class ="career-text">Career</h1>
+        <%= render "contacts/career" %>
+      </div>
+      <div class="certificate-list" id ="certificate-list">
+        <h1 class ="certificate-text">Skills and Certificates</h1>
+        <%= render "contacts/badge" %>
+      </div>
+      <h1 class ="contact-title">Contact Me</h1>
+      <div class="contact-container" id ="contact-container" style = "margin-top:50px;">
+        <%= render partial: 'shared/error_messages', locals: { model: @contact } %>
+        <%= simple_form_for @contact do |f| %>
+          <%= f.input :title, label: "Title", required: true %>
+          <%= f.input :first_name, label: "First Name", required: true %>
+          <%= f.input :last_name, label: "Last Name", required: true %>
+          <%= f.input :email, label: "E-mail" , required: true%>
+          <%= f.input :message, label: "Message", input_html: { rows: 15, style: "height: 150px;" }, required: true %>
+          <%= f.button :submit, "Submit!", class: "form-btn" %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
+<a class="pagetop" href="#">
+  <div class="pagetop__arrow"></div>
+</a>
 <%= render "shared/footer" %>

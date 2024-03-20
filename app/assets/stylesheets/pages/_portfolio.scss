@@ -1,8 +1,17 @@
-html {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html body {
   height: 100%;
+  width: 100%;
 }
 body {
-  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
 
 
@@ -19,6 +28,14 @@ body {
   justify-content: space-between;
   margin-bottom: 120px;
 
+}
+
+
+@media screen and (min-width: 370px) {
+  .project-card {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 }
 
 .app-button {
@@ -50,6 +67,7 @@ body {
 .app-container {
   margin-top: 100px;
 }
+
 
 .bottom-container {
   padding-bottom: 20px;
@@ -85,14 +103,45 @@ body {
 
 }
 
+@media screen and (min-width: 370px) {
+  .project-name {
+    width: 100%;
+  }
+}
+
+
 .project-pic-1 {
   // width: 100%;
   // height: 100%;
   border-radius: 25px;
   object-fit:contain;
   box-shadow: 12px 12px 20px 1px rgb(245, 245, 198);
-
 }
+
+@media screen and (min-width: 370px) {
+  .project-pic-1 {
+    object-fit:scale-down;
+    box-shadow: 0px 0px 0px 0px;
+
+
+  }
+}
+
+.project-pic-2 {
+  // width: 100%;
+  // height: 100%;
+  border-radius: 25px;
+  object-fit:contain;
+  box-shadow: 12px 12px 20px 1px rgb(245, 245, 198);
+}
+
+
+@media screen and (min-width: 370px) {
+  .project-pic-2 {
+    display: none;
+  }
+}
+
 
 .project-pic {
   width: 100%;
@@ -103,9 +152,23 @@ body {
 
 }
 
+@media screen and (min-width: 370px) {
+  .project-pic {
+    box-shadow: 0px 0px 0px 0px;
+
+  }
+}
+
 .project-description {
   width: 50%;
   height: 350px;
+}
+
+@media screen and (min-width: 370px) {
+  .project-description {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 
@@ -121,6 +184,10 @@ body {
   justify-content: center;
   height: auto;
   width: auto;
+  flex-wrap: wrap;
+
+
+
   // animation: blur ease forwards;
   // animation-timeline: view();
   // animation-range: cover 0% cover 100%;
@@ -131,6 +198,9 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-top: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+
 }
 .skills i {
 font-size: 4.5rem;
@@ -144,6 +214,8 @@ letter-spacing: 0.5em;;
   justify-content: center;
   margin-top: 80px;
   object-fit: cover;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 
@@ -173,6 +245,15 @@ letter-spacing: 0.5em;;
   margin:auto;
   // padding-top: 50px;
 }
+
+@media screen and (min-width: 370px) {
+  .contact-container {
+    width: 100%;
+
+  }
+}
+
+
 .contact-container h1 {
   color: white;
 }
@@ -220,4 +301,16 @@ html {
   // background-color:rgb(249, 249, 176) ;
   box-shadow: 0px 0px 10px rgb(248, 248, 179);
 
+}
+
+// @media screen and (min-width: 767px) {
+//   .tagline {
+//     display: none;
+//   }
+// }
+
+@media screen and (min-width: 370px) {
+  .tagline {
+    display: none;
+  }
 }
