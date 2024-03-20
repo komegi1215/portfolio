@@ -17,7 +17,7 @@ body {
 
 .carme-regular {
   font-family: "Carme", sans-serif;
-  font-weight: 400;
+  font-weight: 430;
   font-style: normal;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .project-card {
     flex-direction: column;
     margin-bottom: 40px;
@@ -63,7 +63,7 @@ body {
   flex-direction: row;
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .add-links {
   justify-content: space-between;
   }
@@ -109,7 +109,7 @@ body {
 
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .project-name {
     width: 100%;
   }
@@ -124,7 +124,7 @@ body {
   box-shadow: 12px 12px 20px 1px rgb(245, 245, 198);
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .project-pic-1 {
     object-fit:scale-down;
     box-shadow: 0px 0px 0px 0px;
@@ -142,7 +142,7 @@ body {
 }
 
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .project-pic-2 {
     display: none;
   }
@@ -158,7 +158,7 @@ body {
 
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .project-pic {
     box-shadow: 0px 0px 0px 0px;
 
@@ -170,7 +170,7 @@ body {
   height: 350px;
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .project-description {
     width: 100%;
     height: 200px;
@@ -252,7 +252,7 @@ letter-spacing: 0.5em;;
   // padding-top: 50px;
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .contact-container {
     width: 100%;
 
@@ -309,13 +309,13 @@ html {
 
 }
 
-// @media screen and (min-width: 767px) {
+// @media screen and (max-width: 767px) {
 //   .tagline {
 //     display: none;
 //   }
 // }
 
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 430px) {
   .tagline {
     display: none;
   }

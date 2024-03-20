@@ -1,6 +1,6 @@
 // .carme-regular {
 //   font-family: "Carme", sans-serif;
-//   font-weight: 400;
+//   font-weight: 430;
 //   font-style: normal;
 // }
 
@@ -46,7 +46,7 @@ html, body {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .upper-container {
     flex-direction: column;
     padding-top: 30px;
@@ -63,13 +63,13 @@ html, body {
 
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .title {
     font-size: 50px;
   }
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .title {
     font-size: 50px;
   }
@@ -96,7 +96,7 @@ html, body {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 430px) {
   .right-container {
     width: 100%;
     margin-top: 30px;
