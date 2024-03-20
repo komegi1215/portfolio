@@ -23,10 +23,7 @@
   width: 100%;
 }
 
-.sns {
-  height: 50px;
-  margin-top: 20px;
-}
+
 
 .introduction {
   width: 1000px;
@@ -53,7 +50,7 @@ html, body {
   color:white;
   width:100%;
   font: bold;
-  font-size: 80px;
+  font-size: 90px;
   // text-shadow: 1px 1px 2px rgb(243, 239, 240);
 
 }
@@ -61,6 +58,7 @@ html, body {
 .left-container {
   width:40%;
   margin-top:10px;
+  margin-right:10px;
 }
 
 .right-container {
@@ -69,6 +67,7 @@ html, body {
   display:flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 10px;
 }
 
 .description {
@@ -81,6 +80,9 @@ html, body {
   text-align: left;
 }
 
+.link{
+  color:rgb(250, 250, 136);
+}
 .description::before,
 .description::after {
     position: absolute;

@@ -1,0 +1,41 @@
+.footer {
+  background: rgb(7, 20, 52);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  position: sticky;
+  top: 100vh;
+  // justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  backdrop-filter: blur(16px); /* Adjust the blur radius as needed */
+
+}
+
+.sns {
+  height: 50px;
+  text-align: center;
+  color: black;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+
+
+.footer-copyright {
+  color: white;
+}

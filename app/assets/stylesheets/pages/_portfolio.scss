@@ -1,3 +1,11 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+
 .carme-regular {
   font-family: "Carme", sans-serif;
   font-weight: 400;
@@ -17,6 +25,10 @@
 
 .app-container {
   margin-top: 100px;
+}
+
+.bottom-container {
+  padding-bottom: 20px;
 }
 
 #team {
@@ -133,9 +145,9 @@ letter-spacing: 0.5em;;
 
 }
 .contact-container {
-  width: 70%;
+  width: 65%;
   margin:auto;
-  padding-top: 50px;
+  // padding-top: 50px;
 }
 .contact-container h1 {
   color: white;

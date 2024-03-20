@@ -11,18 +11,11 @@
       <div class="profile-pic">
         <%= image_tag "meg.jpeg", class: "profile" %>
       </div>
-      <div class="sns">
-        <%= link_to "https://github.com/komegi1215", target: :_blank do %>
-          <%= content_tag(:i, "", class: "fa-brands fa-github") %>
-        <% end %>
-        <%= link_to "https://www.linkedin.com/in/megumimizuno/", target: :_blank do %>
-          <%= content_tag(:i, "", class: "fa-brands fa-linkedin") %>
-        <% end %>
-      </div>
+
     </div>
     <div class="right-container col-7">
-      <p class = "description">I am a web developer and data engineer! I completed the Le Wagon Bootcamp (6 months of intense coding while workig full time)
-        I am working as a CRM specialist at a pharmaceutical company, but start to work on data mangement and data engineering as well. No code, no life💻</p>
+      <p class = "description">I am a freelance web developer and data engineer with a strong passion for coding. I successfully completed the rigorous <%= link_to "Le Wagon Bootcamp", "https://www.lewagon.com/", class: "link" %>, a six-month program that honed my coding skills while balancing full-time work commitments.<br>
+Currently, I am employed as a CRM specialist at a pharmaceutical company, where I excel in managing sales operations. Additionally, I have begun delving into the realms of data management and engineering. No code, no life! 💻</p>
     </div>
   </div>
   <div class="bottom-container">
@@ -52,3 +45,4 @@
     </div>
   </div>
 </div>
+<%= render "shared/footer" %>
