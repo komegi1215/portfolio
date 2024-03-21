@@ -48,6 +48,7 @@ body {
   text-decoration: none;
   outline: none;
   transition: all .3s;
+  padding: 2px;
 
 }
 
@@ -153,7 +154,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  object-fit:cover;
+  object-fit:fill;
   box-shadow: 12px 12px 20px 1px rgb(245, 245, 198);
 
 }
