@@ -6,7 +6,7 @@ class ContactMailer < ApplicationMailer
 
   def send_mail(contact)
     @contact = contact
-    mail to: @contact.email, bcc: ENV['MAIL_ADDRESS'], subject: "Thank you for your inquiry!"
+    mail to: @contact.email, bcc: ENV['SMTP_USERNAME'], subject: "Thank you for your inquiry!"
   end
 
   # def contact
