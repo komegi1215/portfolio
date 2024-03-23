@@ -39,7 +39,7 @@
           <%= f.input :first_name, label: "First Name", required: true %>
           <%= f.input :last_name, label: "Last Name", required: true %>
           <%= f.input :email, label: "E-mail" , required: true%>
-          <%= f.input :message, label: "Message", input_html: { rows: 15, style: "height: 150px;" }, required: true %>
+          <%= f.input :message, as: :text, :input_html => { class: 'test', :cols => 5, :rows => 10 } %>
           <%= f.button :submit, "Submit!", class: "form-btn" %>
         <% end %>
       </div>
