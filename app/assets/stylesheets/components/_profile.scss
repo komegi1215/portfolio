@@ -199,14 +199,14 @@ html, body {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 8s linear infinite;
+  animation: shine 25s linear infinite;
    }
    @keyframes shine {
      from {
-       background-position: center 0;
+       background-position: 0 center;
      }
      to {
-       background-position: center 200%;
+       background-position: 200% center;
      }
    }
 
