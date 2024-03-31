@@ -55,17 +55,18 @@ body {
 
 .app-button {
   width: 120px;
-  height: 30px;
+  height: 50px;
   border: none;
   outline: none;
   color: #fff;
-  background: #081a4a;
+  background: #202d52;
   cursor: pointer;
   position: relative;
   z-index: 0;
   border-radius: 5px;
   // padding: 10px;
   margin:10px;
+  text-wrap: wrap;
 }
 
 .app-button:before {
@@ -86,7 +87,7 @@ body {
 }
 
 .app-button:active {
-  color: #000
+  color: #2d2c2c
 }
 
 .app-button:active:after {
@@ -106,7 +107,7 @@ body {
   background: #111;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @keyframes glowing {

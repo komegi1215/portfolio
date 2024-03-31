@@ -29,4 +29,18 @@
       </div>
     </div>
   </div>
+   <div class="project-card">
+    <div class="project-name">
+      <%= image_tag "watchlist.png", class: "project-pic" %>
+    </div>
+    <div class="project-description">
+      <h1 class = "text" id ="gradation">Watch list</h1>
+      <h3 class ="text" id ="team">Le Wagon Individual Project</h3>
+      <p class="tagline">It showcases the all-time best movies by genre. Bookmark a movie by adding your comment.</p>
+      <div class="app-links">
+      <%= button_to raw('Check<br>Watch list'), 'https://watch-list-mmh-dbd2a9784759.herokuapp.com/lists', class: "app-button", method: :get %>
+      <%= button_to 'Check GitHub', 'https://github.com/komegi1215/rails-watch-list', class: "app-button", method: :get %>
+      </div>
+    </div>
+  </div>
 </div>
