@@ -10,7 +10,7 @@ export default class extends Controller {
   }
 
   showMore() {
-    this.profileTextTarget.innerHTML = `<p class='description' data-action='mouseout->profile#showLess'>フリーランスのウェブディベロッパー。<a href="https://www.lewagon.com/", class = "link", style = "text-decoration:none;">Le Wagon</a>の６ヶ月のウェブ開発のブートキャンプをフルタイムで仕事をしながら卒業。Le WagonでTAをしつつ、フリーランスのディベロッパーとしてスキルを磨く。現在は製薬メーカーでCRMスペシャリストとしてビジネスオペレーションの改善を注力しながら、データマネジメントやデータエンジニアの領域にも挑戦中。</p>`;
+    this.profileTextTarget.innerHTML = `<p class='description' data-action='mouseout->profile#showLess'>フリーランスのウェブディベロッパー。<a href="https://www.lewagon.com/", class = "link", style = "text-decoration:none;">Le Wagon</a>の６ヶ月のウェブ開発のブートキャンプをフルタイムで仕事をしながら卒業。Le WagonでTAをしつつ、フリーランスのディベロッパーとしてスキルを磨く。現在は製薬メーカーでCRMスペシャリストとしてビジネスオペレーションの改善に注力しながら、データマネジメントやデータエンジニアの領域にも挑戦中。</p>`;
   }
 
   showLess() {
