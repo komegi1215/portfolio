@@ -2,6 +2,8 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all
     @contact = Contact.new
+    @link_url = "https://www.lewagon.com/"
+    @link_text = "Le Wagon"
   end
 
   def new

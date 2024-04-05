@@ -13,8 +13,8 @@
           <%= image_tag "meg.jpeg", class: "profile" %>
         </div>
       </div>
-      <div class="right-container">
-        <p class = "description">I am a freelance web developer and data engineer with a strong passion for coding. I successfully completed the rigorous <%= link_to "Le Wagon Bootcamp", "https://www.lewagon.com/", class: "link" %>, a six-month program that honed my coding skills while balancing full-time work commitments.<br>
+      <div class="right-container" data-profile-target = "profileText" data-link-url="https://www.lewagon.com/" data-link-text="Le Wagon">
+        <p class = "description" data-action="mouseover->profile#showMore">I am a freelance web developer and data engineer with a strong passion for coding. I successfully completed the rigorous <%= link_to "Le Wagon Bootcamp", "https://www.lewagon.com/", class: "link" %>, a six-month program that honed my coding skills while balancing full-time work commitments.<br>
           Currently, I am employed as a CRM specialist at a pharmaceutical company, where I excel in managing sales operations. Additionally, I have begun delving into the realms of data management and engineering. No code, no life! 💻</p>
       </div>
     </div>
